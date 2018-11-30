@@ -1,5 +1,5 @@
 .appTitle {
-  margin-top: 2rem;
+  margin-top: 1.6rem;
   text-align: center;
 }
 
@@ -7,23 +7,56 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  min-height: 60vh;
 }
 
 .editor,
 .preview {
-  border: 1px solid black;
   width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.editorHeader,
+.previewHeader {
+  font-family: "Fira Sans", "Helvetica", "Arial", "sans-serif";
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #7e57c2;
+  color: #fff;
+  background-color: #7e57c2;
+}
+
+.editingArea {
+  resize: vertical;
+}
+
+.editingArea,
+.previewArea {
   background-color: #ccc;
+  width: 100%;
+  flex: 1;
+  padding: 1rem;
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
 }
 
 @media all and (max-width: 1024px) {
   .wrapper {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .editor {
     margin-bottom: 2rem;
+  }
+
+  .editor,
+  .preview {
+    width: 90%;
+    min-height: 42vh;
   }
 }

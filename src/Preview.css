@@ -1,0 +1,23 @@
+pre,
+code {
+  background-color: #efefef;
+}
+
+code {
+  padding: 0.2rem;
+}
+
+pre {
+  padding: 0.4rem 0.8rem !important;
+  overflow-x: auto;
+}
+
+table {
+  border: 1px solid #aaa;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 0.4rem 0.8rem !important;
+}

@@ -1,10 +1,16 @@
 import React from "react";
 
-const Editor = () => {
+const Editor = props => {
   return (
-    <textarea className="editor" id="editor">
-      Editor
-    </textarea>
+    <div className="editor">
+      <div className="editorHeader">Editor</div>
+      <textarea
+        className="editingArea"
+        id="editor"
+        onChange={props.handleChange}
+        value={props.text}
+      />
+    </div>
   );
 };
 

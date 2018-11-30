@@ -1,9 +1,15 @@
 import React from "react";
+import "./Preview.css";
 
-const Preview = () => {
+const Preview = props => {
   return (
-    <div className="preview" id="preview">
-      Preview
+    <div className="preview">
+      <div className="previewHeader">Preview</div>
+      <div
+        className="previewArea"
+        id="preview"
+        dangerouslySetInnerHTML={{ __html: props.renderedText }}
+      />
     </div>
   );
 };
